@@ -14,49 +14,36 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <h1>Calculator</h1>
+      <h1>Sahara Interface</h1>
 
       <div class="first-row">
-        <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
-        <input type="button" value="C" onclick="clearScreen()" id="clear" />
+        <input type="text" name="result" class="result" id="result" value="" placeholder="Temperature C" readonly />
+        <input type="button" value="Off" onclick="clearscreen()" id="clear" />
+
       </div>
       <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" id="one" />
-        <input type="button" value="2" onclick="liveScreen(2)" id="two" />
-        <input type="button" value="3" id="three" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="+2" onclick="liveScreen('+2')" />
+        <input type="button" value="-2" onclick="liveScreen('-2')" />
       </div>
       <div class="third-row">
-        <input type="button" value="4" id="four" onclick="liveScreen(4)" />
-        <input type="button" value="5" id="five" onclick="liveScreen(5)" />
-        <input type="button" value="6" id="six" onclick="liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="text" name="fan" class="fan" id="fan" value="" placeholder="Fan speed" readonly />
+        
       </div>
       <div class="fourth-row">
-        <input type="button" value="7" id="seven" onclick="liveScreen(7)" />
-        <input type="button" value="8" id="eight" onclick="liveScreen(8)" />
-        <input type="button" value="9" id="nine" onclick="liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*')" />
-      </div>
-      <div class="fifth-row">
-        <input type="button" value="/" onclick="liveScreen('/')" />
-
-        <input type="button" value="0" id="zero" onclick="liveScreen(0)" />
-        <input type="button" value="." class="dot" onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="result.value = eval(result.value)" />
+        <input type="button" value="+2" onclick="fanScreen('+2')" />
+        <input type="button" value="-2" onclick="fanScreen('-2')" />
       </div>
       <div class="bottom-buttons">
         <a href="https://github.com/zxcodes/JavaScript-Calculator"><i class="fab fa-github"></i>
           Source</a>
-        <button onclick="changeTheme()" id="dark-mode">
-          Dark Mode 🌙
-        </button>
       </div>
     </div>
   </div>
   <!-- Fontawesome Script -->
   <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
+
+
 </body>
 
 </html>
