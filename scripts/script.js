@@ -26,16 +26,15 @@ function liveScreen(value) {
     res.value = "";
   }
   res.value += value;
-  result.value = "Temperature: " + eval(result.value)
+  result.value = eval(result.value)
 }
 
 function fanScreen(value) {
-  
   let res = document.getElementById("fan");
   if(res.value == "undefined"){
     res.value = "";
   }
   
   res.value += value;
-  fan.value = "Fan speed: " + eval(fan.value)
+  fan.value = eval(fan.value)
 }

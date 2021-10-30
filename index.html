@@ -16,27 +16,30 @@
     <div class="container">
       <h1>Sahara Interface</h1>
 
-      <div class="first-row">
-        <input type="text" name="result" class="result" id="result" value="" placeholder="Temperature C" readonly />
+      <div class="top-row">
         <input type="button" value="Off" onclick="clearscreen()" id="clear" />
+      </div>
+      <div class="first-row">
+        <input type="text" name="Temp" class="Temp" id="Temp" value="" placeholder="Temperature" readonly />
+        <input type="text" name="result" class="result" id="result" value="" placeholder="0" readonly />
+        
 
       </div>
       <div class="second-row">
         <input type="button" value="+2" onclick="liveScreen('+2')" />
         <input type="button" value="-2" onclick="liveScreen('-2')" />
+
       </div>
       <div class="third-row">
-        <input type="text" name="fan" class="fan" id="fan" value="" placeholder="Fan speed" readonly />
+        <input type="text" name="fan2" class="fan2" id="fan2" value="Fan speed" placeholder="Fan speed" readonly />
+        <input type="text" name="fan" class="fan" id="fan" value="" placeholder="0" readonly />
         
       </div>
       <div class="fourth-row">
         <input type="button" value="+2" onclick="fanScreen('+2')" />
         <input type="button" value="-2" onclick="fanScreen('-2')" />
       </div>
-      <div class="bottom-buttons">
-        <a href="https://github.com/zxcodes/JavaScript-Calculator"><i class="fab fa-github"></i>
-          Source</a>
-      </div>
+
     </div>
   </div>
   <!-- Fontawesome Script -->
